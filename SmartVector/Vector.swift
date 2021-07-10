@@ -8,23 +8,19 @@
 import Foundation
 
 public struct Vector<T> where T : FloatingPoint {
-    private var _array: [T]
+    private(set) public var elements: [T]
     
     public var count: Int {
-        _array.count
+        elements.count
     }
-    
-    var elements: [T] {
-        _array
-    }
-    
-    init(elements: [T]) { self._array = elements }
-    init(elements: T...) { self._array = elements }
+        
+    init(elements: [T]) { self.elements = elements }
+    init(elements: T...) { self.elements = elements }
 }
 
 extension Vector : Sequence {
     public func makeIterator() -> Array<T>.Iterator {
-        self._array.makeIterator()
+        self.elements.makeIterator()
     }
     
     public typealias Iterator = Array<T>.Iterator
@@ -41,9 +37,9 @@ extension Vector : Collection {
         
     public subscript(position: Int) -> T {
         get {
-            self._array[position]
+            self.elements[position]
         } set {
-            self._array[position] = newValue
+            self.elements[position] = newValue
         }
     }
 }
