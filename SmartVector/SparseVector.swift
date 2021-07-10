@@ -92,8 +92,7 @@ extension SparseVector : InnerProductSpace {
     public static func * (lhs: SparseVector<T>, rhs: SparseVector<T>) -> T {
         guard lhs.count == rhs.count else { fatalError("Cannot add vectors of different lengths") }
         
-        return lhs.dictionary.merged(with: rhs.dictionary) { x, y in x * y }
-            .reduce(into: 0) { runningSum, tuple in
+        return lhs.dictionary.merged(with: rhs.dictionary, onIntersection: *).reduce(into: 0) { runningSum, tuple in
                 let (_, value) = tuple
                 runningSum += value
             }

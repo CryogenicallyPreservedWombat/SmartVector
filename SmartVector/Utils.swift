@@ -9,9 +9,7 @@ import Foundation
 
 public extension Dictionary {
     func merged(with otherDict: Dictionary<Key, Value>, mergeIntoSelf: Bool = false, onIntersection: (Value, Value) -> Value) -> Dictionary {
-        var (base, addendum) = mergeIntoSelf || count > otherDict.count ?
-            (self, otherDict) :
-            (otherDict, self)
+        var (base, addendum) = mergeIntoSelf || count > otherDict.count ? (self, otherDict) : (otherDict, self)
         
         for (key, value) in addendum {
             if let baseValue = base[key] {
