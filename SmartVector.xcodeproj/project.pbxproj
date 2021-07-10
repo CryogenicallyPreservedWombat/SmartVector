@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		EFD401002695659D004D3F31 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD400FF2695659D004D3F31 /* main.swift */; };
+		EFFA482F269980C000805A3A /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA482B269980C000805A3A /* Vector.swift */; };
+		EFFA4830269980C000805A3A /* VectorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA482C269980C000805A3A /* VectorSpace.swift */; };
+		EFFA4831269980C000805A3A /* SparseVector.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA482D269980C000805A3A /* SparseVector.swift */; };
+		EFFA4832269980C000805A3A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFA482E269980C000805A3A /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,10 @@
 /* Begin PBXFileReference section */
 		EFD400FC2695659D004D3F31 /* SmartVector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmartVector; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD400FF2695659D004D3F31 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		EFFA482B269980C000805A3A /* Vector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		EFFA482C269980C000805A3A /* VectorSpace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VectorSpace.swift; sourceTree = "<group>"; };
+		EFFA482D269980C000805A3A /* SparseVector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SparseVector.swift; sourceTree = "<group>"; };
+		EFFA482E269980C000805A3A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				EFD400FF2695659D004D3F31 /* main.swift */,
+				EFFA482D269980C000805A3A /* SparseVector.swift */,
+				EFFA482E269980C000805A3A /* Utils.swift */,
+				EFFA482B269980C000805A3A /* Vector.swift */,
+				EFFA482C269980C000805A3A /* VectorSpace.swift */,
 			);
 			path = SmartVector;
 			sourceTree = "<group>";
@@ -119,6 +131,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFFA4832269980C000805A3A /* Utils.swift in Sources */,
+				EFFA482F269980C000805A3A /* Vector.swift in Sources */,
+				EFFA4830269980C000805A3A /* VectorSpace.swift in Sources */,
+				EFFA4831269980C000805A3A /* SparseVector.swift in Sources */,
 				EFD401002695659D004D3F31 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
