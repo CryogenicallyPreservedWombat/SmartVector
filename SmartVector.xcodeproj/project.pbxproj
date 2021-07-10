@@ -65,13 +65,45 @@
 		EFD400FE2695659D004D3F31 /* SmartVector */ = {
 			isa = PBXGroup;
 			children = (
+				EFFA4838269A129000805A3A /* Vector Space */,
+				EFFA483A269A12A500805A3A /* Sparse Vector */,
+				EFFA4839269A129B00805A3A /* Vector */,
+				EFFA483B269A12AC00805A3A /* Utils */,
 				EFD400FF2695659D004D3F31 /* main.swift */,
-				EFFA482D269980C000805A3A /* SparseVector.swift */,
-				EFFA482E269980C000805A3A /* Utils.swift */,
-				EFFA482B269980C000805A3A /* Vector.swift */,
-				EFFA482C269980C000805A3A /* VectorSpace.swift */,
 			);
 			path = SmartVector;
+			sourceTree = "<group>";
+		};
+		EFFA4838269A129000805A3A /* Vector Space */ = {
+			isa = PBXGroup;
+			children = (
+				EFFA482C269980C000805A3A /* VectorSpace.swift */,
+			);
+			path = "Vector Space";
+			sourceTree = "<group>";
+		};
+		EFFA4839269A129B00805A3A /* Vector */ = {
+			isa = PBXGroup;
+			children = (
+				EFFA482B269980C000805A3A /* Vector.swift */,
+			);
+			path = Vector;
+			sourceTree = "<group>";
+		};
+		EFFA483A269A12A500805A3A /* Sparse Vector */ = {
+			isa = PBXGroup;
+			children = (
+				EFFA482D269980C000805A3A /* SparseVector.swift */,
+			);
+			path = "Sparse Vector";
+			sourceTree = "<group>";
+		};
+		EFFA483B269A12AC00805A3A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EFFA482E269980C000805A3A /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
