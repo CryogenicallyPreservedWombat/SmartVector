@@ -47,8 +47,8 @@ public struct SparseVectorIterator<T> : IteratorProtocol where T : FloatingPoint
     var index: Int = 0
 
     mutating public func next() -> T? {
-        if index < sparseVector.count - 1 {
-            index += 1
+        if index < sparseVector.count {
+            defer { index += 1 }
             return sparseVector[index]
         }
         return nil
