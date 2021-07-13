@@ -8,16 +8,19 @@
 import Foundation
 
 public protocol VectorSpace {
-    static func +(lhs: Self, rhs: Self) -> Self
+    associatedtype Scalar : FloatingPoint
+
     static prefix func -(v: Self) -> Self
+    
+    static func +(lhs: Self, rhs: Self) -> Self
+    static func *(lhs: Scalar, rhs: Self) -> Self
 }
 
 public extension VectorSpace {
     static func -(lhs: Self, rhs: Self) -> Self { lhs + (-rhs) }
+    static func *(lhs: Self, rhs: Scalar) -> Self { rhs * lhs }
 }
 
 public protocol InnerProductSpace : VectorSpace {
-    associatedtype Scalar
-    
     static func *(lhs: Self, rhs: Self) -> Scalar
 }
